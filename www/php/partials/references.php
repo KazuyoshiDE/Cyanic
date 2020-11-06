@@ -11,7 +11,7 @@
                     <span class="realization__period">3 Monate</span>
                 </div>
                 <div class="item__image order-1 order-xl-2 mb-3 mb-xl-0">
-                    <img src="img/references/devices.png" alt="Devices">
+                    <img src="img/references/devices.png" alt="Devices" />
                 </div>
                 <div class="item__system order-2 order-xl-3">
                     <span class="system__headline">//System</span>
@@ -30,7 +30,7 @@
                     <span class="realization__period">3 Monate</span>
                 </div>
                 <div class="item__image order-1 order-xl-2 mb-3 mb-xl-0">
-                    <img src="img/references/devices.png" alt="Devices">
+                    <img src="img/references/devices.png" alt="Devices" />
                 </div>
                 <div class="item__system order-2 order-xl-3">
                     <span class="system__headline">//System</span>
@@ -49,7 +49,7 @@
                     <span class="realization__period">3 Monate</span>
                 </div>
                 <div class="item__image order-1 order-xl-2 mb-3 mb-xl-0">
-                    <img src="img/references/devices.png" alt="Devices">
+                    <img src="img/references/devices.png" alt="Devices" />
                 </div>
                 <div class="item__system order-2 order-xl-3">
                     <span class="system__headline">//System</span>
