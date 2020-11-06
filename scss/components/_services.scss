@@ -1,0 +1,99 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-brand;
+
+    @include media-breakpoint-up(sm) {
+        margin-left: -10vw;
+    }
+
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        width: 115vw;
+    }
+
+    .service {
+        flex: 1;
+        transition: flex $transition-base;
+
+        @include media-breakpoint-up(lg) {
+            transform: skew(-20deg);
+        }
+
+        &:nth-child(1) {
+            background-color: $color-brand-dark;
+            .content {
+                .content__icon {
+                    background-color: $color-brand;
+                    
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            background-color: $color-brand;
+
+            .content {
+                .content__icon {
+                    background-color: $color-white;
+                    color: $color-brand;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            background-color: $color-white;
+
+            .content {
+                color: $color-text;
+
+                .content__icon {
+                    background-color: $color-brand-dark;
+                    color: $color-white;
+                }
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: $color-white;
+            
+            @include media-breakpoint-up(lg) {
+                transform: skew(20deg);
+            }
+
+            .content__icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include square(110px);
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+            .content__name {
+                font-size: $h4-font-size;
+                font-weight: $font-weight-base;
+            }
+
+            .content__text {
+                opacity: 0;
+                transition: opacity $transition-base;
+            }
+        }
+
+        &:hover {
+            flex: 2;
+
+            .content__text {
+                opacity: 1;
+            }
+        }
+    }
+}

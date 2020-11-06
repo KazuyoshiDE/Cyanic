@@ -1,0 +1,54 @@
+.loadingscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease 1.5s;
+
+    .loading-animation {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        .sk-cube {
+            background: $color-brand;
+
+            &-grid {
+                @include square(80px);
+                border-radius: 100%;
+                overflow: hidden;
+                opacity: 1;
+                transition: opacity 0.5s ease 0.5s;
+            }
+        }
+    }
+}
+
+
+.loading-logo {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.loading--done .loadingscreen {
+    opacity: 0;
+}
+
+.loading--done .loading-logo {
+    opacity: 1;
+}
+
+.loading--done .sk-cube-grid {
+    opacity: 0;
+}

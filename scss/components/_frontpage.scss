@@ -1,0 +1,32 @@
+.firstview {
+    position: relative;
+    &-image {
+        background-image: url(../img/bg-laptop-min.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        &-layer {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            background: rgba(darken($color-brand, 25%), 0.80);
+        }
+    }
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-size: $h1-font-size;
+        font-weight: $font-weight-light;
+        color: $color-white;
+        text-shadow: $shadow-base;
+        width: 300px;
+    }
+}

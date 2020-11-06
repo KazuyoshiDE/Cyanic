@@ -1,0 +1,42 @@
+//-------------------------------
+// GLOBAL
+//-------------------------------
+html {
+    font-size: $rembase;
+}
+
+body {
+    font-size: $font-size-xs;
+    transition: font-size $transition-base;
+    @include media-breakpoint-up(sm) {
+        font-size: $font-size-sm;
+    }
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-base;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $font-size-lg;
+    }
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+em {
+    font-weight: $font-weight-base;
+    font-style: italic;
+}
+
+a {
+    outline: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid;
+    margin: 1em 0;
+    padding: 0;
+}

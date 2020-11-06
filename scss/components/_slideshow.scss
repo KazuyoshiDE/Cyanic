@@ -1,0 +1,95 @@
+.carousel {
+    box-shadow: 0 0 15px 0 rgba($color-black, 0.6);
+
+    &__item {
+        padding: 50px;
+        background: linear-gradient(0deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 62%);
+
+        &:focus {
+            outline: none;
+        }
+
+        .item__name {
+            font-size: 3.75rem;
+            text-align: center;
+            font-weight: $font-weight-base;
+        }
+
+        .item__description {
+            width: 80%;  
+            margin: 0 auto 20px auto;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+
+            @include media-breakpoint-up(xl) {
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+            }
+
+            .item__realization, .item__system {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .realization__headline, .system__headline {
+                font-size: $font-size-xs;
+            }
+
+            .realization__period, .system__name {
+                font-size: $h3-font-size;
+                line-height: 0.75;
+            }
+
+            .item__image {
+                img {
+                    width: 200px;
+
+                    @include media-breakpoint-up(md) {
+                        width: 350px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        width: 550px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-arrow {
+        @include square(60px);
+        border-radius: 50%;
+        background-color: $color-brand;
+        color: white;
+        font-size: 20px;
+        z-index: 1;
+        transition: background-color $transition-base;
+
+        &:before {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $color-brand-dark;
+            box-shadow: 0 0 0 0 rgba($color-brand, 1);
+            animation: pulse-circle-brand-slideshow 2s infinite;
+        }
+    }
+
+    .slick-prev {
+        left: -30px;
+
+        
+    }
+
+    .slick-next {
+        right: -30px;
+    }
+}

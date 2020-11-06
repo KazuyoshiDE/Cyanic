@@ -1,0 +1,17 @@
+.references {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/references/references_bg.jpg');
+    background-size: cover;
+
+    &__carousel {
+        width: 85%;
+
+        @include media-breakpoint-up(md) {
+            width: 70%;
+        }
+    }
+}

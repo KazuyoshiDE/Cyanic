@@ -1,0 +1,27 @@
+{
+    "name": "cyanic_php",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.1",
+        "autoprefixer": "^9.8.6",
+        "bootstrap": "^4.5.3",
+        "grunt": "^1.3.0",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-uglify": "^4.0.1",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-postcss": "^0.9.0",
+        "grunt-sass": "^3.1.0",
+        "hamburgers": "^1.1.3",
+        "node-sass": "^4.11.0",
+        "particles.js": "^2.0.0",
+        "postcss-easing-gradients": "^3.0.1",
+        "postcss-fixes": "^2.0.1",
+        "postcss-momentum-scrolling": "^1.9.15",
+        "postcss-object-fit-images": "^1.1.2",
+        "postcss-will-change": "^3.0.0",
+        "postcss-will-change-transition": "^1.2.0",
+        "slick-carousel": "^1.8.1",
+        "spinkit": "^1.2.5"
+    },
+    "dependencies": {}
+}

@@ -1,0 +1,78 @@
+//-------------------------------------------
+// REM BASE
+//-------------------------------------------
+$rembase: 16px;
+$spacer: 1rem;
+//-------------------------------------------
+// COLORS
+//-------------------------------------------
+$color-base: $color-brand;
+$body-color: $color-text;
+//-------------------------------------------
+// FONT SETTINGS
+//-------------------------------------------
+$font-family-base: 'Roboto Condensed',
+sans-serif;
+$font-weight-base: 300;
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-size-base: calculateRem(18px);
+$font-size-xs: calculateRem(14px);
+$font-size-sm: calculateRem(16px);
+$font-size-lg: calculateRem(20px);
+//-------------------------------------------
+// TRANSITIONS
+//-------------------------------------------
+$transition-base: 0.4s ease;
+//-------------------------------------------
+// LINKS AND BUTTONS
+//-------------------------------------------
+$btn-transition: color $transition-base,
+background-color $transition-base,
+border-color $transition-base,
+box-shadow $transition-base;
+$link-color: $color-brand;
+$link-hover-color: $color-text;
+$link-hover-decoration: none;
+//-------------------------------------------
+// GRID CONFIG
+//-------------------------------------------
+$grid-gutter-width-enlarged: 100px;
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+//-------------------------------------------
+// SPACING
+//-------------------------------------------
+$space-classes: ( small: 50px, medium: 60px, large: 140px);
+$space-responsive-scale-factor-breakpoints-base: ( xs: 1.00, ms: 1.00, sm: 1.00, md: 1.00, lg: 1.00, xl: 1.00);
+$space-small-responsive-scale-factor-breakpoints: map-merge($space-responsive-scale-factor-breakpoints-base, ( xs: 0.66666666666666666667, ms: 0.66666666666666666667));
+$space-medium-responsive-scale-factor-breakpoints: map-merge($space-responsive-scale-factor-breakpoints-base, ( xs: 0.71428571428571428571, ms: 0.71428571428571428571));
+$space-large-responsive-scale-factor-breakpoints: map-merge($space-responsive-scale-factor-breakpoints-base, ( xs: 0.53333333333333333333, ms: 0.53333333333333333333));
+$space-responsive-scale-factor-breakpoints: ( small: $space-small-responsive-scale-factor-breakpoints, medium: $space-medium-responsive-scale-factor-breakpoints, large: $space-large-responsive-scale-factor-breakpoints);
+$space-sets: ( margin-bottom-: margin-bottom, margin-top-: margin-top, m-t: margin-top, m-b: margin-bottom, p-t: padding-top, p-b: padding-bottom);
+//-------------------------------------------
+// HEADINGS
+//-------------------------------------------
+$h1-font-size: calculateRem(44px);
+$h2-font-size: calculateRem(38px);
+$h3-font-size: calculateRem(28px);
+$h4-font-size: calculateRem(24px);
+$h5-font-size: calculateRem(20px);
+$h6-font-size: calculateRem(18px);
+$heading-font-sizes: ( h1: $h1-font-size, h2: $h2-font-size, h3: $h3-font-size, h4: $h4-font-size, h5: $h5-font-size, h6: $h6-font-size);
+$heading-responsive-scale-factor-breakpoints-base: ( xs: 1.00, ms: 1.00, sm: 1.00, md: 1.00, lg: 1.00, xl: 1.00);
+$heading-h1-responsive-scale-factor-breakpoints: map-merge($heading-responsive-scale-factor-breakpoints-base, ( xs: 0.76190476190476190476190476190476, ms: 0.76190476190476190476190476190476));
+$heading-h2-responsive-scale-factor-breakpoints: map-merge($heading-responsive-scale-factor-breakpoints-base, ( xs: 0.72222222222222222222222222222222, ms: 0.72222222222222222222222222222222));
+$heading-h3-responsive-scale-factor-breakpoints: map-merge($heading-responsive-scale-factor-breakpoints-base, ( xs: 0.84615384615384615384615384615385, ms: 0.84615384615384615384615384615385));
+$heading-h4-responsive-scale-factor-breakpoints: map-merge($heading-responsive-scale-factor-breakpoints-base, ( xs: 0.81818181818181818181818181818182, ms: 0.81818181818181818181818181818182));
+$heading-h5-responsive-scale-factor-breakpoints: map-merge($heading-responsive-scale-factor-breakpoints-base, ( xs: 0.88888888888888888888888888888889, ms: 0.88888888888888888888888888888889));
+$heading-h6-responsive-scale-factor-breakpoints: map-merge($heading-responsive-scale-factor-breakpoints-base, ( xs: 0.875, ms: 0.875));
+$heading-responsive-scale-factor-breakpoints: ( h1: $heading-h1-responsive-scale-factor-breakpoints, h2: $heading-h2-responsive-scale-factor-breakpoints, h3: $heading-h3-responsive-scale-factor-breakpoints, h4: $heading-h4-responsive-scale-factor-breakpoints, h5: $heading-h5-responsive-scale-factor-breakpoints, h6: $heading-h6-responsive-scale-factor-breakpoints);
+$header-margin-bottom-factor-base: 1;
+$subheading-scale-factor-base: 0.61111111111111111111111;
+$subheading-margin-top-factor-base: 0.75;
+//-------------------------------------------
+// CUSTOM VARIABLES
+//-------------------------------------------
+$shadow-base: 3px 3px 30px $color-black;

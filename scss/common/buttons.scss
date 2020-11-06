@@ -1,0 +1,27 @@
+.btn {
+    background-color: $color-brand;
+    color: $color-white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: all $transition-base;
+
+    &:hover {
+        background-color: $color-brand-dark;
+        color: $color-white;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &__transparent {
+        background-color: transparent;
+        border: 2px solid $color-white;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-brand;
+        }
+    }
+}
+

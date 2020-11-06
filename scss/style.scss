@@ -1,0 +1,41 @@
+//--------------------------------------------
+//                  BASE
+//--------------------------------------------
+@import 'base/colors.scss';
+@import 'base/functions.scss';
+@import 'base/variables.scss';
+@import 'base/keyframes.scss';
+@import 'base/mixins.scss';
+//--------------------------------------------
+//                  VENDOR
+//--------------------------------------------
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import 'node_modules/spinkit/scss/spinkit.scss';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+//--------------------------------------------
+//                  COMMON
+//--------------------------------------------
+@import 'common/buttons.scss';
+//--------------------------------------------
+//                  COMPONENTS
+//--------------------------------------------
+@import 'components/navigation.scss';
+@import 'components/frontpage.scss';
+@import 'components/subpages.scss';
+@import 'components/loadingscreen.scss';
+@import 'components/services.scss';
+@import 'components/team.scss';
+@import 'components/references.scss';
+@import 'components/slideshow.scss';
+//--------------------------------------------
+//                  OVERRIDES
+//--------------------------------------------
+@import 'overrides/bootstrap';
+//--------------------------------------------
+//                  SETUP
+//--------------------------------------------
+@import 'setup/typography.scss';
+@import 'setup/global.scss';
+@import 'setup/spacing.scss';
