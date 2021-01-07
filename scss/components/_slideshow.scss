@@ -48,8 +48,16 @@
             }
 
             .item__image {
+                margin: auto;
+
+
+
                 img {
                     width: 200px;
+                    
+                    @include media-breakpoint-up(lg) {
+                        margin: 0;
+                    }
 
                     @include media-breakpoint-up(md) {
                         width: 350px;

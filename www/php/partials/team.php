@@ -42,7 +42,7 @@
                     </div>
                     <div class="member">
                         <div class="member__img">
-                            <img src="img/member/member.png" alt="Artem Salomonow">
+                            <img src="img/member/artem.jpg" alt="Artem Salomonow">
                         </div>
                         <span class="member__name">Artem Salomoonow</span>
                         <div class="member__position">Lorem Ipsum</div>
